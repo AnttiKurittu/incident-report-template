@@ -5,3 +5,5 @@ This repository contains a generic incident response template. It is permissivel
 The report template follows good practices for covering all the important issues that should be addressed when working on a cyber security incident.
 
 Additions, fixes, corrections and enhancements are welcomed.
+
+> All instructional language is presented as a block quote. Example paragraphs, tables or other text that is not in blockquotes is meant to be edited as needed and retained in the report.
