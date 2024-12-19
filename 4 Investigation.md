@@ -1,3 +1,5 @@
+# 4 Investigation
+
 This is the main chapter of the report. This is where you describe the investigation method, how the investigation started, what actions were taken, what outcomes came out of those actions and how the incident was resolved.
 
 This chapter should be broken down into subchapters that describe the individual "subplots" of the investigation. This is guided by the investigation itself - typically compromised accounts, compromised endpoints, malware analysis and such can get their own chapters. If the description of an event runs several pages, it should be broken into constituent parts. Remember, that often different readers will have different emphasis on what chapters they focus on, so separating things like how accounts were compromised and abused from how the network segregation was not sufficient is a good idea.

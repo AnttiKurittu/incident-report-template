@@ -1,4 +1,4 @@
-![[example_logo.png]]
+# General Style Guide
 
 1. Use clear, simple and careful language.
 2. Avoid overly long or overly short sentences.
