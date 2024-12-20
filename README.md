@@ -6,4 +6,12 @@ The report template follows good practices for covering all the important issues
 
 Additions, fixes, corrections and enhancements are welcomed.
 
-> All instructional language is presented as a block quote. Example paragraphs, tables or other text that is not in blockquotes is meant to be edited as needed and retained in the report.
+Usage:
+
+- Write your report using the template in the `Report/` folder
+- Install `[pandoc](https://pandoc.org/installing.html)`
+- Run `render.sh`
+- Report in Word format will be rendered in the `Output` folder
+
+Known issues:
+- Lua filter for applying styles to tables and code, both inline and blocks, isn't working. We had a long discussion about this with ChatGPT but I'm starting to think that guy doesn't really know Pandoc and Lua either...

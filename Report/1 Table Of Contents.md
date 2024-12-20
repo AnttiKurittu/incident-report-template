@@ -1,32 +1,7 @@
-
 # 1 Table Of Contents
 
-[[1.1 Report revisions]]
+> [HELPER] Insert Table Of Contents manually here. In Word choose “References” on the ribbon menu, click the first option “Table Of Contents”, click “Built in” -> “Automatic Table 1” or whichever style you prefer.
+> 
+> Unfortunately there doesn’t seem to be a reliable way to insert the TOC anywhere except the first page using Pandoc, so a manual workaround is required.
 
-[[1.2 Distribution list]]
-
-[[1.3 Disclaimer and reading guide]]
-
-[[1.4 Intended audience]]
-
-[[2 Executive summary]]
-
-[[2.1 Business Impact Analysis]]
-
-[[2.2 Investigation limitations]]
-
-[[2.3 Investigation goals and targets]]
-
-[[2.4 Glossary of terms]]
-
-[[3 Timeline of events]]
-
-[[3.1 Incident timeline]]
-
-[[3.2 Investigation timeline]]
-
-[[4 Investigation]]
-
-[[5 Conclusions and recommendations]]
-
-[[6 Attachments]]
+Table Of Contents goes here.
