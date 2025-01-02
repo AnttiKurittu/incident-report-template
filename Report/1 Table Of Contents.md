@@ -1,7 +1,7 @@
 # 1 Table Of Contents
 
-> [HELPER] Insert Table Of Contents manually here. In Word choose “References” on the ribbon menu, click the first option “Table Of Contents”, click “Built in” -> “Automatic Table 1” or whichever style you prefer.
-> 
-> Unfortunately there doesn’t seem to be a reliable way to insert the TOC anywhere except the first page using Pandoc, so a manual workaround is required.
+<div id="toc-placeholder"></div>
 
-Table Of Contents goes here.
+<p class="helper">Pandoc stubbornly places the Table Of Contents on the first page, before the title page. The file "99 JavaScript additions" contains a function to move it here after the title.<br>
+<br>
+The comment above is used as a placeholder, do not remove it.</p>

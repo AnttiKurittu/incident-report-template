@@ -4,14 +4,15 @@ This repository contains a generic incident response template. It is permissivel
 
 The report template follows good practices for covering all the important issues that should be addressed when working on a cyber security incident.
 
-Additions, fixes, corrections and enhancements are welcomed.
+The markdown files are rendered to an HTML output for maximum compatibility. In most cases, the HTML file can be printed out directly. You can edit the CSS filed to match your company visual style.
+
+Additions, fixes, corrections and enhancements are welcome!
 
 Usage:
 
 - Write your report using the template in the `Report/` folder
-- Install `[pandoc](https://pandoc.org/installing.html)`
-- Run `render.sh`
-- Report in Word format will be rendered in the `Output` folder
-
-Known issues:
-- Lua filter for applying styles to tables and code, both inline and blocks, isn't working. We had a long discussion about this with ChatGPT but I'm starting to think that guy doesn't really know Pandoc and Lua either...
+- Install [pandoc](https://pandoc.org/installing.html)
+- Run `./render.sh output/your-report-name.html`
+- Review the report for correctness and ensure helper texts are hidden (there's a link for that on the title page)
+- Open the resulting HTML file in a compatible browser, and print to PDF
+- Review resulting file for layout etc

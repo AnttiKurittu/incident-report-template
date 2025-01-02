@@ -1,0 +1,221 @@
+/* General table styles */
+table {
+  border-collapse: collapse;
+  width: 100%; /* Ensure tables span the entire page width */
+  table-layout: auto; /* Allow the table layout to auto-adjust based on content */
+  border-radius: 8px; /* Slight rounding of table corners */
+  overflow: hidden; /* Prevent the rounding from causing layout issues */
+  background-color: #333333; /* Dark background for table */
+}
+
+td, th {
+  border: 2px solid #444444; /* Darker border for table cells */
+  padding: 8px;
+  text-align: left;
+  word-wrap: break-word; /* Ensure long words break to the next line */
+  overflow-wrap: break-word; /* Fallback for older browsers */
+  color: #ffffff; /* Light text for readability */
+}
+
+/* Table header styling */
+th {
+  background-color: #555555; /* Darker gray header */
+  font-weight: bold;
+  word-wrap: normal; /* Do not break words in table headers */
+}
+
+/* Alternating row colors for better readability */
+tr:nth-child(even) {
+  background-color: #444444; /* Darker gray for even rows */
+}
+
+tr:nth-child(odd) {
+  background-color: #333333; /* Dark background for odd rows */
+}
+
+/* Page break before H1 headings */
+h1 {
+  page-break-before: always;
+  font-family: "Aptos", sans-serif;
+  font-size: 2em;
+  margin-top: 1.5em;
+  color: #ffffff; /* White text for headings */
+}
+
+/* Set body font to Aptos */
+body {
+  font-family: "Aptos", sans-serif;
+  background-color: #121212; /* Dark background for the body */
+  color: #e0e0e0; /* Light text for the body */
+}
+
+/* Title page div styles */
+.titlepage-1 {
+  font-family: "Aptos", sans-serif;
+  font-size: 2em; /* Mimics the size of an H1 */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #ffffff; /* White text for title */
+}
+
+.titlepage-2 {
+  font-family: "Aptos", sans-serif;
+  font-size: 1.75em; /* Mimics the size of an H2 */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.75em;
+  color: #ffffff; /* White text for subtitle */
+}
+
+/* H2 styles */
+h2 {
+  font-family: "Aptos", sans-serif;
+  font-size: 1.75em;
+  margin-top: 1.25em;
+  color: #ffffff; /* White text for H2 */
+}
+
+/* H3 styles */
+h3 {
+  font-family: "Aptos", sans-serif;
+  font-size: 1.5em;
+  margin-top: 1em;
+  color: #ffffff; /* White text for H3 */
+}
+
+/* H4 styles */
+h4 {
+  font-family: "Aptos", sans-serif;
+  font-size: 1.25em;
+  margin-top: 0.75em;
+  color: #ffffff; /* White text for H4 */
+}
+
+#show-help-text {
+  display: block;
+  text-align: center;
+  margin: 20px 0; /* Adjust the margin to center the link */
+  color: #a1c4fd; /* Light blue text */
+}
+
+/* Style for helper paragraphs */
+p.helper {
+  font-style: italic;
+  color: #d0d0d0; /* Light gray text */
+  background-color: #3a3a3a; /* Dark background for helper paragraphs */
+  padding: 10px;
+  border-left: 4px solid #888888; /* Subtle border */
+  margin: 0.75em 0; /* Reduced top and bottom margin */
+}
+
+/* Hide helper paragraphs */
+p.helper {
+  display: none;
+}
+
+/* Style for investigator paragraphs */
+p.investigator {
+  margin: 20px;
+  border: 2px solid darkblue;
+  border-radius: 8px;
+  background-color: #3a5f7b; /* Dark blue background */
+  padding: 10px;
+  color: #ffffff; /* White text for investigator paragraphs */
+}
+
+/* Table of Contents (TOC) Styles */
+#TOC {
+  padding-left: 1em; /* Indentation for TOC */
+}
+
+#TOC ul {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+#TOC li {
+  padding-left: 0.5em; /* Subtle indentation for top-level items */
+  color: #a1c4fd; /* Light blue for TOC items */
+}
+
+/* Nested lists (TOC sub-levels) */
+#TOC ul ul {
+  margin-left: 1em; /* Indentation for second-level items */
+}
+
+#TOC ul ul ul {
+  margin-left: 1.5em; /* Further indentation for third-level items */
+}
+
+/* Remove link underlining globally */
+a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #1e90ff; /* Bright blue for links */
+}
+
+/* Ensure tables span the entire width when printing */
+@media print {
+  table {
+    width: 100% !important; /* Enforce full width on print */
+  }
+
+  /* Hide title tag content when printing */
+  title {
+    display: none;
+  }
+}
+
+/* Inline code styling */
+code {
+  font-size: 1em; /* Match the body font size */
+  font-family: monospace, "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", "Monaco", monospace; /* Monospace font for inline code */
+  background-color: #444444; /* Dark background for inline code */
+  color: #f5f5f5; /* Light text for inline code */
+  padding: 0.2em 0.4em; /* Slight padding for better readability */
+  border-radius: 4px; /* Round corners for inline code */
+}
+
+/* Highlight style for emphasis (like a highlighter pen) */
+.highlight {
+  background-color: #ffb800; /* Yellow background for highlight */
+  padding: 0.2em; /* Padding for better visibility */
+  border-radius: 4px; /* Slight rounding of corners */
+  display: inline; /* Keep it inline with the text */
+}
+
+/* Defang style that disables links */
+.defang {
+  pointer-events: none; /* Disables clicking on the element */
+  color: red; /* Red text to indicate it's disabled */
+  text-decoration: none; /* Remove any link underlining */
+  display: inline; /* Keep it inline with the text */
+}
+
+/* Screenshot style for centering images with a border and alt text */
+.screenshot {
+  text-align: center; /* Center the image */
+  display: block; /* Ensure the div behaves as a block element */
+  margin: 1em auto; /* Center and add margin */
+}
+
+.screenshot img {
+  border: 2px solid #666666; /* Dark border around the image */
+  max-width: 100%; /* Ensure the image doesn't overflow its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.screenshot figcaption {
+  font-style: italic; /* Display alt text in italic */
+  margin-top: 0.5em; /* Add some space between the image and the caption */
+  color: #aaaaaa; /* Light gray color for the caption */
+}
+
+/* Hide the "Show Help Text" link when printing */
+@media print {
+  #show-help-text {
+    display: none; /* Hide it in the printed output */
+  }
+}
