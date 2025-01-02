@@ -2,9 +2,9 @@ import os
 import hashlib
 
 # Path to the directory with the attachments
-attachments_dir = './Attachments'
+attachments_dir = './attachments'
 # Path to the output markdown file
-report_path = './Report/6 Attachments.md'
+report_path = 'report/6 Attachments.md'
 
 # Function to calculate SHA-256 checksum of a file
 def calculate_sha256(file_path):
@@ -56,7 +56,7 @@ def generate_report():
         os.makedirs(os.path.dirname(report_path), exist_ok=True)
         with open(report_path, 'w') as f:
             f.write(markdown_content)
-        print(f"Report written to {report_path}")
+        print(f"Attachments written to {report_path}")
     else:
         print("No files found in the directory.")
 
