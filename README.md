@@ -12,7 +12,8 @@ Usage:
 
 - Write your report using the template in the `Report/` folder
 - Install [pandoc](https://pandoc.org/installing.html)
+- Ensure python3 is installed
 - Run `./render.sh output/your-report-name.html`
 - Review the report for correctness and ensure helper texts are hidden (there's a link for that on the title page)
-- Open the resulting HTML file in a compatible browser, and print to PDF
-- Review resulting file for layout etc
+- Open the resulting self-contained HTML file in a compatible browser, and print to PDF
+- Review resulting file for layout and correctness
