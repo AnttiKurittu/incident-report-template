@@ -18,12 +18,12 @@ def calculate_sha256(file_path):
 # Function to generate the markdown content with the required format
 def generate_markdown_content(files_data):
     content = "# 6 Attachments\n\n"
-    
+
     for file_data in files_data:
         content += f"**File name**: `{file_data['name']}`\\\n"
         content += f"**File size**: `{file_data['size']}`\\\n"
         content += f"**File hash**: `{file_data['checksum']}`\n\n"
-    
+
     return content
 
 # Function to scan files and generate the report
