@@ -46,8 +46,7 @@ Click **Load example report** on the viewer landing page to see a pre-loaded exa
 | `Attachments/` | Files to be listed in the attachments section |
 | `Diagrams/` | Source files for diagrams (e.g. draw.io) |
 | `Documentation/` | Style guide and documentation on writing reports |
-| `index.html` | Report viewer entry point (open in browser) |
-| `assets/` | Viewer application assets (JS/CSS) |
+| `index.html` | Report viewer — single self-contained file, open in browser |
 | `viewer/` | Viewer source code (React/Vite/TypeScript) |
 
 ## Developing the viewer
@@ -65,5 +64,4 @@ After building, copy the output to the repository root:
 
 ```bash
 cp viewer/dist/index.html .
-cp -r viewer/dist/assets .
 ```
