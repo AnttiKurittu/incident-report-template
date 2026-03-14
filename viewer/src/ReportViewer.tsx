@@ -99,6 +99,33 @@ export default function ReportViewer({ markdown, onBack }: ReportViewerProps) {
     }
   }, [])
 
+  // Inline TOC component rendered after the "Table Of Contents" heading
+  const InlineToc = useCallback(() => {
+    // Filter out the TOC heading itself
+    const tocEntries = toc.filter(
+      (e) => e.text.toLowerCase() !== '1 table of contents'
+    )
+    return (
+      <nav className="inline-toc">
+        <ul>
+          {tocEntries.map((entry) => (
+            <li key={entry.id} className={`inline-toc-h${entry.level}`}>
+              <a
+                href={`#${entry.id}`}
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToId(entry.id)
+                }}
+              >
+                {entry.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )
+  }, [toc, scrollToId])
+
   // Custom heading component that adds IDs matching the TOC
   const headingRenderer = useCallback(
     (level: number) => {
@@ -110,14 +137,22 @@ export default function ReportViewer({ markdown, onBack }: ReportViewerProps) {
         const count = counters.get(base) || 0
         counters.set(base, count + 1)
         const id = count > 0 ? `${base}-${count}` : base
+
+        // Inject inline TOC after the "Table Of Contents" heading
+        const isTocHeading =
+          level === 1 && text.toLowerCase().includes('table of contents')
+
         return (
-          <Tag id={id} {...props}>
-            {children}
-          </Tag>
+          <>
+            <Tag id={id} {...props}>
+              {children}
+            </Tag>
+            {isTocHeading && <InlineToc />}
+          </>
         )
       }
     },
-    []
+    [InlineToc]
   )
 
   // Reset counters on each render cycle

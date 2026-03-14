@@ -477,6 +477,35 @@ html, body {
   font-size: 0.9rem;
 }
 
+/* ── Inline Table of Contents ── */
+
+.inline-toc {
+  margin: 1rem 0 2rem;
+}
+
+.inline-toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inline-toc li a {
+  display: block;
+  padding: 0.2rem 0;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.inline-toc li a:hover {
+  color: var(--accent);
+}
+
+.inline-toc-h1 a { font-weight: 600; }
+.inline-toc-h2 a { padding-left: 1.5rem; }
+.inline-toc-h3 a { padding-left: 3rem; font-size: 0.9rem; }
+.inline-toc-h4 a { padding-left: 4.5rem; font-size: 0.85rem; }
+
 /* ── Mobile sidebar toggle ── */
 
 .sidebar-toggle {
@@ -522,6 +551,22 @@ html, body {
 
 /* ── Print styles ── */
 
+@page {
+  margin: 2cm 1.5cm;
+  @bottom-center {
+    content: counter(page);
+    font-size: 10pt;
+    color: #666;
+  }
+}
+
+/* No page number on the title page */
+@page :first {
+  @bottom-center {
+    content: none;
+  }
+}
+
 @media print {
   .sidebar,
   .sidebar-toggle,
@@ -564,5 +609,9 @@ html, body {
 
   a {
     color: inherit;
+  }
+
+  .inline-toc li a {
+    color: black;
   }
 }
