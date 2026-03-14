@@ -16,6 +16,4 @@
 Investigator: Example Name<br>
 <br>Restrictions: CONFIDENTIAL / TLP:AMBER</div>
 
-<a href="javascript:void(0)" id="show-help-text" onclick="toggleHelpers()">Show Help Text</a>
-
-<p class="helper">Help texts are now VISIBLE. Hide them before exporting to PDF. Use "Print to PDF" to export the final report.</p>
+<p class="helper">Helper texts are visible. Hide them using the Help button in the sidebar before exporting to PDF.</p>
