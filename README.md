@@ -65,3 +65,8 @@ After building, copy the output to the repository root:
 ```bash
 cp viewer/dist/index.html .
 ```
+
+
+----------
+
+Interested in a fully featured incident response platform instead? Check out DFIRe at [https://dfire.fi/](https://dfire.fi/).
